@@ -2,7 +2,8 @@ import { Backpack, Github, Linkedin, Mail, MapPin } from 'lucide-react'
 import { useTranslation } from 'next-i18next'
 import { Twemoji } from '~/components/Twemoji'
 import { siteMetadata } from '~/data/siteMetadata'
-import XIcon from '~/icons/x.svg'
+// import XIcon from '~/icons/x.svg'
+import { XIcon } from 'lucide-react'
 
 export function ProfileCardInfo() {
   let { t } = useTranslation('common')
