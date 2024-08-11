@@ -30,37 +30,38 @@ export function TypedBios() {
   return (
     <div>
       <ul id="bios" className="hidden">
-        <li>{tr.t('bio_1')}</li>
-        <li>{tr.t('bio_2')}</li>
-        <li>{tr.t('bio_3')}</li>
-        <li>{tr.t('bio_4')}</li>
-        <li>{tr.t('bio_5')}</li>
+        <li>
+          {tr.t('bio_1')} <Twemoji emoji="footprints" />
+        </li>
+        <li>
+          {tr.t('bio_2')} <Twemoji emoji="clapping-hands" />
+        </li>
+        <li>
+          {tr.t('bio_3')} <Twemoji emoji="office-building" />
+        </li>
+        <li>
+          {tr.t('bio_4')} <Twemoji emoji="memo" />
+        </li>
+        <li>
+          {tr.t('bio_5')} <Twemoji emoji="technologist" />
+        </li>
         <li>{tr.t('bio_6')}</li>
         <li>{tr.t('bio_7')}</li>
         <li>{tr.t('bio_8')}</li>
-        <li>{tr.t('bio_9')}</li>
         <li>
-          {tr.t('bio_10')} <Twemoji emoji="dog" />
+          {tr.t('bio_9')} <Twemoji emoji="boy" />
         </li>
         <li>
-          {tr.t('bio_11')}
-          <span className="ml-1">
+          {tr.t('bio_10')} <Twemoji emoji="movie" />
+        </li>
+        <li>
+          {tr.t('bio_11')} <Twemoji emoji="camping" />
+          {/* <span className="ml-1">
             <Twemoji emoji="soccer-ball" />,
             <Twemoji emoji="man-swimming" />,
             <Twemoji emoji="ping-pong" />,
-            <Twemoji emoji="volleyball" />
-          </span>
-        </li>
-        <li>{tr.t('bio_12')}</li>
-        <li>
-          {tr.t('bio_13')} <Twemoji emoji="musical-keyboard" /> & <Twemoji emoji="guitar" />
-        </li>
-        <li>{tr.t('bio_14')}</li>
-        <li>
-          {tr.t('bio_15')} <Twemoji emoji="chess-pawn" />
-        </li>
-        <li>
-          {tr.t('bio_16')} <Twemoji emoji="video-game" />.
+            <Twemoji emoji="camping" />
+          </span> */}
         </li>
       </ul>
       <span ref={el} className="text-neutral-900 dark:text-neutral-200" />

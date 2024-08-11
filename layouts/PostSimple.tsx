@@ -11,7 +11,7 @@ import type { PostSimpleLayoutProps } from '~/types/layout'
 
 function PostSimple(props: PostSimpleLayoutProps) {
   let { frontMatter, type, children, authorDetails, commentConfig } = props
-  let { date, title, slug, fileName, tags, readingTime } = frontMatter
+  let { date, title, slug, fileName, tags, readingTime, cover } = frontMatter
   let postUrl = `${siteMetadata.siteUrl}/${type}/${slug}`
 
   return (

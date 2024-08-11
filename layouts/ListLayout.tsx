@@ -30,12 +30,15 @@ function ListLayout(props: ListLayoutProps) {
           </p>
           <PostsSearch onChange={setSearchValue} />
         </header>
-        <ul className="space-y-14 py-12">
-          {!filteredBlogPosts.length && t('blog.no_posts')}
-          {displayPosts.map((frontMatter) => (
-            <PostListItem key={frontMatter.slug} frontMatter={frontMatter} />
-          ))}
-        </ul>
+
+        <div className="container max-w-full py-12">
+          <div className="grid-cols-3 lg:grid">
+            {!filteredBlogPosts.length && t('blog.no_posts')}
+            {displayPosts.map((frontMatter) => (
+              <PostListItem key={frontMatter.slug} frontMatter={frontMatter} />
+            ))}
+          </div>
+        </div>
       </div>
       {pagination && pagination.totalPages > 1 && !searchValue && (
         <Pagination currentPage={pagination.currentPage} totalPages={pagination.totalPages} />

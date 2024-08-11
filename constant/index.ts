@@ -1,7 +1,7 @@
 export let BLUR_IMAGE_DATA_URL =
   'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNcvWS1LgAGJQIpt50GkgAAAABJRU5ErkJggg=='
 
-export let LOGO_IMAGE_PATH = '/static/images/logo.jpg'
+export let LOGO_IMAGE_PATH = '/static/images/logo.png'
 
 export let GISCUS_COMMENTS_ID = 'comments-container'
 export let UTTERANCES_COMMENTs_ID = 'comments-container'
@@ -29,8 +29,8 @@ export let TOKEN_CLASSNAMES = {
   comment: 'text-gray-500 italic',
 }
 
-export let POSTS_PER_PAGE = 10
-export let FEATURED_POSTS = 5
+export let POSTS_PER_PAGE = 12
+export let FEATURED_POSTS = 9
 
 export let LOCALES = [
   {

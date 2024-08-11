@@ -3,5 +3,6 @@ export let headerNavLinks = [
   { href: '/snippets', label: 'menu_snippets' },
   { href: '/projects', label: 'menu_projects' },
   { href: '/about', label: 'menu_about' },
-  { href: '/resume', label: 'menu_resume' },
+  { href: '/feed.xml', label: 'RSS' },
+  // { href: '/resume', label: 'menu_resume' },
 ]

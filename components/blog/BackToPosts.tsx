@@ -8,7 +8,7 @@ export function BackToPosts({ page }: { page: number }) {
       className="flex gap-3 text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
     >
       <MoveLeft strokeWidth={1} />
-      <span>Back to the blog</span>
+      <span>返回Blog</span>
     </Link>
   )
 }

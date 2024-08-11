@@ -8,7 +8,7 @@ export function BlogHeader({ title, date, readingTime }: BlogHeaderProps) {
   let { i18n } = useTranslation()
   let lang = i18n.language
 
-  let createdAt = formatDate(date, lang)
+  let createdAt = formatDate(date, 'zh-CN')
   let readingTimeText = readingTime.text
 
   return (
@@ -20,7 +20,7 @@ export function BlogHeader({ title, date, readingTime }: BlogHeaderProps) {
             <dt className="sr-only">Published on</dt>
             <dd className="flex items-center justify-center text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
               <time dateTime={date} className="flex items-center">
-                <Twemoji emoji="calendar" size="" />
+                <Twemoji emoji="timer-clock" size="" />
                 <span className="ml-1.5">{createdAt}</span>
               </time>
               <span className="mx-2">-</span>

@@ -1,0 +1,63 @@
+---
+title: 👨‍🎨 循序渐进，无章法中寻找可持续之道
+date: '2024-03-24'
+tags: ['随笔', '个人记录']
+draft: false 
+cover: '/static/about-q1/about-q1.jpg'
+summary: 春已始，花渐开。2024年第一季度马上结束了，在春暖花开的前夕，很适合记录总结下这段时间的点点滴滴，否则当遗忘成了习惯，生活可能也失去了星星点点的的趣味。
+---
+
+春已始，花渐开。春节过后，人们再次开始了新的一年的谋生之路，我也又开始了常规的写代码，解决问题，开会开会的日常，整个过程也算按部就班，没有多少波澜。但是突然
+某一天发现，自己这样下来不是可持续性的，好像眼下每日忙碌，但是没有增长点，也只能在自我陶醉中暗自窃喜，殊不知，随时都可能被淘汰，因为你没有了技术力，特别是多元化的技术力。
+在如今的技术潮流中，每个人所面对的都是层出不穷的技术方案，技术框架，如果只在某一种研发方式下，而且还是特别窄的移动端研发上，在国内的行业情况下，是难以在40岁还在岗位上的。
+
+因此，三月份开始，利用业余时间，自己开始慢慢的学习前端技术，因为一直在做的移动端也属于前端领域，学习起来Web前端，或者跨平台的前端，再加上自己也有HTML和CSS的基础，便下定决心，重新学习下现代化的Web前端技术。
+其实也是看到一些让人惊艳的Web页面，总是想能否自己也实现一个自己的Web，自己折腾自己的站点，让那种喜悦也充斥下。于是就有了现在这个新的站点样式，其背后也是这近一个月的学习成果的展示。
+
+## 生命不息，折腾不止
+
+该站点是使用Next.js，TailwindCSS来实现的页面和效果，语言采用了typescript，而这三种组合后，发现比较对味自己，也激发了不断折腾的欲望。
+
+> * Next.js: 一个基于React的框架，它支持服务器端渲染（SSR）和静态站点生成（SSG），并且提供了零配置、混合模式渲染、增量静态生成、TypeScript支持以及快速刷新等功能。
+> ![](/static/about-q1/nextjs.png)
+
+> * TailwindCSS: TailwindCSS是一个流行的CSS框架，它以功能类优先的方式工作，允许开发者通过组合预定义的类来快速构建现代网站和用户界面。这个框架的特点是“原子化”CSS，即提供了一系列基础的样式类（如flex, text-center等），使得开发者可以轻松地组合这些类来实现复杂的布局和设计效果。TailwindCSS的使用不需要编写大量的CSS代码，而是通过HTML中的类来控制样式，这大大简化了前端开发的工作量。
+> ![](/static/about-q1/tailwindcss.png)
+
+跟着文档学习了Next.js之后，总感觉跃跃欲试，便开始折腾起了自己的小站，总开始到结束，大概耗时7天，加了图片的效果，加了landing-page的个人介绍等，总体来说目前较为满意，但是还是有一些问题还需要解决和优化，例如SEO。
+
+## 工作中的意外
+
+最近可能所有iOS开发者都在做一件事，就是隐私清单的添加，自从AppStore发出了这个隐私清单的审核要求后，每个应用程序、每个三方库的维护者，每个只要是兼容iOS平台的框架都在尽快做兼容。
+作为开发者，这样的要求其实挺烦人的，应用本身，甚至应用所依赖的三方库都要逐个过一遍，否则应用会面临无法更新升级，三方库可能失去使用者或者被使用者催命式的追问，什么时候支持隐私清单等等。
+
+在司内的应用中，目前也在做这一块的支持，但意外的是，遇到了一个不顺利的难点。Flutter在早前作为一个模块被引入进来，目前也有很多业务在使用Flutter进行开发，然而Flutter本身的版本我们一直保持在早期相对稳定的一个版本上，目前如果做升级的话，则面临很多代码需要重新适配，虽然适配可行，但是快节奏的迭代过程中，这样的事情有点吃力不讨好。因此就相仿设防采用其他方法来支持隐私清单。
+因此就尝试对产物进行手动的隐私清单添加，然后做签名，方向目前是对的，但是还需要实践和测试后，才能检验效果。
+
+![](/static/about-q1/privicyinfo.png)
+
+## 生活中的惊喜
+
+最近春天的感觉越来越浓了，随处可见争相开放的花儿。另外儿子在画画方面的创造和思维也是让这个老父亲有点意外，连续两次的课程，都是画春天，每次的小画都感受到了他画画时的思维，既开阔而又具体。
+
+<div className="-mx-2 flex flex-wrap overflow-hidden xl:-mx-2">
+  <div className="my-1 w-full object-cover max-h-96 overflow-hidden px-2 xl:my-1 xl:w-1/2 xl:px-2 hover:scale-105 transition-all duration-500 cursor-pointer">
+    ![仰头看树](/static/about-q1/paint-01.jpg)
+  </div>
+  <div className="my-1 w-full object-cover max-h-96 overflow-hidden px-2 xl:my-1 xl:w-1/2 xl:px-2 hover:scale-105 transition-all duration-500 cursor-pointer">
+    ![俯瞰春天的大地](/static/about-q1/paint-02.jpg)
+  </div>
+</div>
+
+另外简单教了下儿子使用iPhone人像模式---舞台光进行拍照，主要是抓细节的方式，没有想到一学即会，也简单拍了两张，效果个人感觉还是很不错的。
+
+<div className="-mx-2 flex flex-wrap overflow-hidden xl:-mx-2">
+  <div className="my-1 w-full object-cover max-h-96 overflow-hidden px-2 xl:my-1 xl:w-1/2 xl:px-2 hover:scale-105 transition-all duration-500 cursor-pointer">
+    ![](/static/about-q1/tkePhoto-01.jpg)
+  </div>
+  <div className="my-1 w-full object-cover max-h-96 overflow-hidden px-2 xl:my-1 xl:w-1/2 xl:px-2 hover:scale-105 transition-all duration-500 cursor-pointer">
+    ![](/static/about-q1/tkePhoto-02.jpg)
+  </div>
+</div>
+
+春天来了，燕子也要来了，愿这个春天，每个家人都能健康快乐，享受这个春天的点点滴滴。期待这个夏天，能够带着孩子们去他们心心念念已久的成都去看“花花”。
