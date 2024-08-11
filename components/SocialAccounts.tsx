@@ -1,4 +1,4 @@
-import { Facebook, Github, Linkedin, Mail, Youtube } from 'lucide-react'
+import { Github, Linkedin, Mail } from 'lucide-react'
 import { siteMetadata } from '~/data/siteMetadata'
 
 export default function SocialAccounts() {
@@ -58,7 +58,7 @@ export default function SocialAccounts() {
           <span className="sr-only">Mail</span>
           <Mail strokeWidth={1.5} />
         </a>
-        <a
+        {/* <a
           href={siteMetadata.facebook}
           target="_self"
           className="text-sm text-dark dark:text-white"
@@ -77,7 +77,7 @@ export default function SocialAccounts() {
         >
           <span className="sr-only">Youtube</span>
           <Youtube strokeWidth={1.5} />
-        </a>
+        </a> */}
       </div>
     </div>
   )
