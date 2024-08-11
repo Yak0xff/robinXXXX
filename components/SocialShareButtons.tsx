@@ -1,7 +1,8 @@
 import { Facebook } from 'lucide-react'
 import { FacebookShareButton, TwitterShareButton } from 'react-share'
 import { siteMetadata } from '~/data/siteMetadata'
-import XIcon from '~/icons/x.svg'
+// import XIcon from '~/icons/x.svg'
+import { XIcon } from 'lucide-react'
 import type { SocialButtonsProps } from '~/types/components'
 import { Link } from './Link'
 
