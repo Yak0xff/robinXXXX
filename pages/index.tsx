@@ -5,7 +5,7 @@ import { ProfileCard } from '~/components/ProfileCard'
 import { Twemoji } from '~/components/Twemoji'
 import { BlogLinks } from '~/components/homepage/BlogLinks'
 // import { FeaturedImages } from '~/components/homepage/FeaturedImages'
-import { Photos } from '~/components/homepage/Photos'
+// import { Photos } from '~/components/homepage/Photos'
 import { FeaturedPosts } from '~/components/homepage/FeaturedPosts'
 import { Greeting } from '~/components/homepage/Greeting'
 import { Heading } from '~/components/homepage/Heading'
@@ -52,9 +52,9 @@ export default function Home({ posts }) {
           </div>
         </div>
       </div>
-      <div>
+      {/* <div>
         <Photos />
-      </div>
+      </div> */}
       <div className="container max-w-full py-12">
         <div className="grid-cols-3 lg:grid">
           <FeaturedPosts posts={posts} />
