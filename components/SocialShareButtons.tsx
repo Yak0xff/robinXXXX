@@ -8,7 +8,7 @@ import { Link } from './Link'
 
 export function SocialShareButtons({ postUrl, title, fileName }: SocialButtonsProps) {
   let createEditOnGithubUrl = (fileName: string) =>
-    `${siteMetadata.siteRepo}/blob/main/data/blog/${fileName}`
+    `${siteMetadata.siteRepo}/blob/main/data/en/blog/${fileName}`
   let createDiscussionTwitterUrl = (postUrl: string) =>
     `https://twitter.com/search?q=${encodeURIComponent(postUrl)}`
 

@@ -1,5 +1,5 @@
 export let siteMetadata = {
-  siteUrl: 'http://localhost:3434/',
+  siteUrl: 'https://robinx.vercel.app/',
   siteRepo: 'https://github.com/Yak0xff/robinXXXX',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/logo.png',
