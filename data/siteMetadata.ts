@@ -1,6 +1,6 @@
 export let siteMetadata = {
   siteUrl: 'http://localhost:3434/',
-  siteRepo: 'https://github.com/hta218/leohuynh.dev',
+  siteRepo: 'https://github.com/Yak0xff/robinXXXX',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/logo.png',
   socialBanner: '/static/images/logo.png',
