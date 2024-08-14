@@ -54,15 +54,15 @@ export function TypedBios() {
         <li>
           {tr.t('bio_10')} <Twemoji emoji="movie" />
         </li>
-        <li>
-          {tr.t('bio_11')} <Twemoji emoji="camping" />
-          {/* <span className="ml-1">
+        {/* <li>
+          {tr.t('bio_11')} <Twemoji emoji="camping" /> */}
+        {/* <span className="ml-1">
             <Twemoji emoji="soccer-ball" />,
             <Twemoji emoji="man-swimming" />,
             <Twemoji emoji="ping-pong" />,
             <Twemoji emoji="camping" />
           </span> */}
-        </li>
+        {/* </li> */}
       </ul>
       <span ref={el} className="text-neutral-900 dark:text-neutral-200" />
     </div>
