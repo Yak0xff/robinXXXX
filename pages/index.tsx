@@ -42,8 +42,10 @@ export default function Home({ posts }) {
               <ShortDescription />
               <BlogLinks />
               <p className="my-8 flex">
-                <span className="mr-2">{t('happy_reading')}</span>
-                <Twemoji emoji="clinking-beer-mugs" />
+                <span className="mr-2">
+                  「{t('happy_reading')}」
+                  <Twemoji emoji="clinking-beer-mugs" />
+                </span>
               </p>
             </div>
           </div>
