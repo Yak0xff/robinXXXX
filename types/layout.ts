@@ -1,7 +1,7 @@
 import type React from 'react'
 import type { CommentConfigType } from './components'
 import type { PaginationType, TOC } from './server'
-import type { AuthorFrontMatter, BlogFrontMatter, MdxFrontMatter, SnippetFrontMatter } from './mdx'
+import type { AuthorFrontMatter, BlogFrontMatter, MdxFrontMatter, LogsFrontMatter } from './mdx'
 
 export interface AuthorLayoutProps {
   children: React.ReactNode
@@ -26,8 +26,8 @@ export interface PostSimpleLayoutProps {
 
 export interface PostLayoutProps extends PostSimpleLayoutProps {}
 
-export interface SnippetLayoutProps {
-  snippets: SnippetFrontMatter[]
+export interface LogsLayoutProps {
+  logs: LogsFrontMatter[]
   description: string
 }
 

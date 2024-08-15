@@ -12,7 +12,6 @@ import { Heading } from '~/components/homepage/Heading'
 import { ShortDescription } from '~/components/homepage/ShortDescription'
 import { TypedBios } from '~/components/homepage/TypedBios'
 import { getAllFilesFrontMatter } from '~/libs/mdx.server'
-import { Container } from 'lucide-react'
 import { Link } from '~/components/Link'
 import { FEATURED_POSTS } from '~/constant'
 

@@ -20,10 +20,10 @@ export function BlogLinks() {
           {t('menu_blog_2')}
         </span>
       </Link>
-      <Link href="/snippets" className="hover:underline">
+      <Link href="/logs" className="hover:underline">
         <Twemoji emoji="dna" />
-        <span data-umami-event="home-link-snippets" className="ml-1.5">
-          {t('menu_snippets_2')}
+        <span data-umami-event="home-link-logs" className="ml-1.5">
+          {t('menu_logs_2')}
         </span>
       </Link>
       <Link href="/about" className="hover:underline">

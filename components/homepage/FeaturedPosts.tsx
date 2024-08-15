@@ -36,7 +36,7 @@ export function FeaturedPosts({ posts }: { posts: BlogFrontMatter[] }) {
                   </div>
                   <div className="p-6">
                     <p
-                      className="font-bold mb-2 tracking-tight first-line:uppercase first-line:tracking-widest
+                      className="font-bold mb-2 tracking-tight 
   first-letter:text-7xl first-letter:font-bold first-letter:text-slate-900
   first-letter:mr-3 first-letter:float-left"
                     >

@@ -8,7 +8,7 @@ export type MdxPageLayout =
   | 'PostLayout'
   | 'PostSimple'
   | 'ResumeLayout'
-  | 'SnippetLayout'
+  | 'LogsLayout'
 
 export interface MdxFrontMatter {
   layout?: MdxPageLayout
@@ -32,7 +32,7 @@ export interface BlogFrontMatter extends MdxFrontMatter {
   fileName: string
 }
 
-export interface SnippetFrontMatter extends BlogFrontMatter {
+export interface LogsFrontMatter extends BlogFrontMatter {
   heading: string
   type: string
 }

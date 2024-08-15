@@ -1,24 +1,20 @@
 import { useTranslation } from 'next-i18next'
-import type { BlogFrontMatter, SnippetFrontMatter } from '~/types/mdx'
+import type { BlogFrontMatter, LogsFrontMatter } from '~/types/mdx'
 import { formatDate } from '~/utils/date'
 import { Link } from './Link'
 import { Tag } from './Tag'
 import Twemoji from './Twemoji'
 import { BlogTags } from './blog/BlogTags'
 
-export function PostListItem({
-  frontMatter,
-}: {
-  frontMatter: BlogFrontMatter | SnippetFrontMatter
-}) {
+export function PostListItem({ frontMatter }: { frontMatter: BlogFrontMatter | LogsFrontMatter }) {
   let { slug, date, title, summary, tags, heading, type, cover } = frontMatter as BlogFrontMatter &
-    SnippetFrontMatter
+    LogsFrontMatter
   let { t, i18n } = useTranslation()
   let lang = i18n.language
-  let isSnippets = heading && type
-  let category = isSnippets ? 'snippets' : 'blog'
+  let isLogs = heading && type
+  let category = isLogs ? 'logs' : 'blog'
 
-  if (isSnippets) {
+  if (isLogs) {
     return (
       <li key={slug}>
         <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">

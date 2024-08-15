@@ -1,8 +1,6 @@
-import { Facebook } from 'lucide-react'
+import { Facebook, XIcon } from 'lucide-react'
 import { FacebookShareButton, TwitterShareButton } from 'react-share'
 import { siteMetadata } from '~/data/siteMetadata'
-// import XIcon from '~/icons/x.svg'
-import { XIcon } from 'lucide-react'
 import type { SocialButtonsProps } from '~/types/components'
 import { Link } from './Link'
 
@@ -46,7 +44,7 @@ export function SocialShareButtons({ postUrl, title, fileName }: SocialButtonsPr
             via={siteMetadata.socialAccounts.x}
             className="mr-2 flex items-center overflow-hidden rounded !bg-x !py-1.5 !px-2.5 hover:opacity-90"
           >
-            <XIcon className="h-5 w-5" fill="#fff" viewBox="0 0 1200 1227" />
+            <XIcon strokeWidth={1.5} size={20} />
             <span className="ml-2.5 mr-1.5 font-extrabold text-white">Tweet</span>
           </TwitterShareButton>
         )}
