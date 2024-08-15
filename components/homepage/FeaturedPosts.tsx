@@ -25,9 +25,9 @@ export function FeaturedPosts({ posts }: { posts: BlogFrontMatter[] }) {
                     <img
                       className="w-full h-64 object-cover"
                       src={cover}
-                      alt="Nature scene"
-                      width={1088}
-                      height={612}
+                      alt={title}
+                      width={1024}
+                      height={532}
                     />
 
                     <div className="absolute top-0 right-0 bg-teal-500 text-white px-2 py-1 m-2 rounded-md text-sm font-semibold">
