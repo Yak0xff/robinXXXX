@@ -19,7 +19,7 @@ export function FeaturedPosts({ posts }: { posts: BlogFrontMatter[] }) {
         return (
           <>
             <Link href={`/blog/${slug}`} key={slug} title={title}>
-              <div key={slug} className="flex justify-center items-center p-4">
+              <div key={slug} className="flex justify-center items-center p-4 ">
                 <div className="flex h-full flex-col overflow-hidden rounded-lg border border-transparent shadow-nextjs dark:shadow-nextjs-dark">
                   <div className="relative">
                     <img
@@ -35,9 +35,15 @@ export function FeaturedPosts({ posts }: { posts: BlogFrontMatter[] }) {
                     </div>
                   </div>
                   <div className="p-6">
-                    <p className="font-bold mb-2 tracking-tight">{title.slice(0, 18)}</p>
-                    <p className="text-gray-500 mb-4 dark:text-gray-400">
-                      {summary.slice(0, 60)}......
+                    <p
+                      className="font-bold mb-2 tracking-tight first-line:uppercase first-line:tracking-widest
+  first-letter:text-7xl first-letter:font-bold first-letter:text-slate-900
+  first-letter:mr-3 first-letter:float-left"
+                    >
+                      {title.slice(0, 18)}
+                    </p>
+                    <p className="text-gray-700 mb-4 dark:text-gray-400 ">
+                      {summary.slice(0, 52)}......
                     </p>
 
                     <div className="flex justify-between items-center">
