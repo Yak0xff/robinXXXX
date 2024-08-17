@@ -13,19 +13,22 @@ import { ShortDescription } from '~/components/homepage/ShortDescription'
 import { TypedBios } from '~/components/homepage/TypedBios'
 import { getAllFilesFrontMatter } from '~/libs/mdx.server'
 import { Link } from '~/components/Link'
-import { FEATURED_POSTS } from '~/constant'
+import { FEATURED_LOGS, FEATURED_POSTS } from '~/constant'
+import { FeaturedLogs } from '~/components/homepage/FeaturedLogs'
 
 export async function getStaticProps({ locale }) {
   let posts = getAllFilesFrontMatter(`${locale}/blog`)
+  let logs = getAllFilesFrontMatter(`${locale}/logs`)
   return {
     props: {
       posts,
+      logs,
       ...(await serverSideTranslations(locale, ['common'])),
     },
   }
 }
 
-export default function Home({ posts }) {
+export default function Home({ posts, logs }) {
   let { t } = useTranslation('common')
 
   return (
@@ -66,6 +69,29 @@ export default function Home({ posts }) {
               href="/blog"
               className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
               aria-label="all posts"
+            >
+              <span data-umami-event="all-posts"> {t('blog.all_posts_title')} &rarr;</span>
+            </Link>
+          </div>
+        )}
+      </div>
+
+      <div>
+        <h3 className=" text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100">
+          {t('menu_logs_2')}
+        </h3>
+      </div>
+
+      <div className="container max-w-full py-12">
+        <div className="grid-cols-3 lg:grid">
+          <FeaturedLogs logs={logs} />
+        </div>
+        {logs.length > FEATURED_LOGS && (
+          <div className="flex justify-end text-base font-medium leading-6 py-4">
+            <Link
+              href="/logs"
+              className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+              aria-label="all logs"
             >
               <span data-umami-event="all-posts"> {t('blog.all_posts_title')} &rarr;</span>
             </Link>

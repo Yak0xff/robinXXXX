@@ -30,7 +30,8 @@ export let TOKEN_CLASSNAMES = {
 }
 
 export let POSTS_PER_PAGE = 12
-export let FEATURED_POSTS = 9
+export let FEATURED_POSTS = 6
+export let FEATURED_LOGS = 6
 
 export let LOCALES = [
   {
