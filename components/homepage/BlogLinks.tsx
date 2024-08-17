@@ -8,12 +8,6 @@ export function BlogLinks() {
 
   return (
     <div className="flex flex-col space-y-1.5">
-      <Link href="/projects" className="hover:underline">
-        <Twemoji emoji="hammer-and-wrench" />
-        <span data-umami-event="home-link-projects" className="ml-1.5">
-          {t('menu_projects_2')}
-        </span>
-      </Link>
       <Link href="/blog" className="hover:underline">
         <Twemoji emoji="memo" />
         <span data-umami-event="home-link-blog" className="ml-1.5">
@@ -24,6 +18,12 @@ export function BlogLinks() {
         <Twemoji emoji="dna" />
         <span data-umami-event="home-link-logs" className="ml-1.5">
           {t('menu_logs_2')}
+        </span>
+      </Link>
+      <Link href="/projects" className="hover:underline">
+        <Twemoji emoji="hammer-and-wrench" />
+        <span data-umami-event="home-link-projects" className="ml-1.5">
+          {t('menu_projects_2')}
         </span>
       </Link>
       <Link href="/about" className="hover:underline">
