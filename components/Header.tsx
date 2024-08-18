@@ -27,7 +27,7 @@ export function Header({ navShow, onToggleNav }: { onToggleNav: () => void; navS
                 className="rounded-full"
               />
             </div>
-            <div className="hidden h-8 text-xl font-semibold sm:block">主页</div>
+            <div className="hidden h-8 text-xl font-semibold sm:block">YC.Z</div>
           </div>
         </Link>
         <div className="flex items-center gap-4">

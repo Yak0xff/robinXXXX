@@ -48,17 +48,26 @@
   }
 }
 
+.prose
+  :where(blockquote p:first-of-type):not(
+    :where([class~='not-prose'], [class~='not-prose'] *)
+  )::before {
+  content: none;
+}
+
 .prose blockquote p {
   margin: 16px 0px;
 }
 
 .prose blockquote {
-  background: #ebebeb;
+  /* background: #ebebeb; */
   color: #3d3b3b;
-  border-top: 1px solid transparent;
-  border-bottom: 1px solid transparent;
+  border-top: 1px solid #6f6868;
+  border-bottom: 1px solid #6f6868;
+  border-right: 1px solid #6f6868;
   padding-right: 8px;
   border-left-color: #6f6868;
+  font-style: normal;
 }
 
 .dark .dark\:prose-dark blockquote {
